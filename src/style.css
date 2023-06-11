@@ -7,6 +7,10 @@
   background-color: #FFE810;
 }
 
+.hero_button:active {
+  background-color: #d2bf0d;
+}
+
 .active-tab {
   border-bottom: 4px solid #00a88e;
 }

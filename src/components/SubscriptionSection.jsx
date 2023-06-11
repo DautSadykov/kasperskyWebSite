@@ -56,6 +56,7 @@ export default function SubscriptionSection() {
           ))}
         </div>
       </div>
+      
       <div
         className="subs_arrow right-10 top-56 pl-0.5"
         onClick={() => handleChangeSlide("right")}

@@ -6,12 +6,8 @@ export default function HeroSection({ darkmode, toggleDarkMode }) {
     <div className="relative">
       <img className="hero_img_lg" src="hero_image_lg.png" />
       <img className="hero_img_md" src="hero_image_md.png" />
-      <div className="flex items-center gap-5 mb-5 lg:mb-10 ">
-        <p
-          className={`text-gray-500 text-sm max-sm:hidden ${
-            darkmode && "darkmode_text"
-          }`}
-        >
+      <div className="flex items-center gap-5 mb-5 lg:mb-10">
+        <p className={`text-gray-500 text-sm max-sm:hidden ${darkmode && "darkmode_text"}`}>
           Home {">"} Sub Page 2 {">"} Sub Page 3 {">"} Sub Page 4
         </p>
         <div
@@ -27,7 +23,7 @@ export default function HeroSection({ darkmode, toggleDarkMode }) {
           <LightMode style={{ color: "white" }} />
         </div>
       </div>
-      <button className="hero_button p-1 px-10 rounded-full font-bold lg:mb-2 ">
+      <button className="hero_button p-1 px-10 rounded-full font-bold lg:mb-2 transition-all">
         If you need an Special Offer Block
       </button>
       <h1
