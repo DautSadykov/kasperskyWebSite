@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hero_button {
+  background-color: #FFE810;
+}
+
+.active-tab {
+  border-bottom: 4px solid #00a88e;
+}
+
+.platform_selector_dropdown {
+  @apply relative hidden border border-primary m-10;
+}
+
+.dropdown_arrow {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url("dropdown-arrow.svg");
+  background-size: cover;
+  position: absolute;
+  top: 35%;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown_selector {
+  @apply p-5 pr-10;
+  appearance: none;
+  outline: none;
+}
+
+@media (max-width: 640px) {
+  .platform_selector {
+    display: none;
+  }
+
+  .platform_selector_dropdown {
+    display: block;
+  }
+}
+
+.sub_card {
+  width: 256px;
+  height: 360px;
+  box-shadow: -1px 0px 22px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card_icon {
+  left: 31%;
+  /* width: 58px; */
+  @apply absolute -top-11;
+}
+
+.card_button {
+  @apply text-white px-16 py-3 rounded-md transition-all 
+        duration-75 bg-primary border-2 border-primary;
+}
+
+.card_button:active {
+  @apply bg-white text-primary border-2 border-primary;
+}
+
+.subs_arrow {
+  @apply absolute h-10 w-10 bg-primary rounded-full flex
+   justify-center items-center cursor-pointer transition-all duration-75;
+}
+
+.subs_arrow:active {
+  background-color: #007967;
+}
+
+.carousel {
+  width: calc(2 * 280px);
+  height: 60vh;
+  transition: all 500ms;
+}
+
+@media (min-width: 900px) {
+  .carousel {
+    width: calc(3 * 280px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel {
+    width: calc(4 * 280px);
+  }
+}
+
+@media (max-width: 640px) {
+  .carousel {
+    width: calc(1 * 280px);
+  }
+
+  .main .subs_section .carousel {
+    padding-left: calc(1vw + 5px);
+  }
+}
+
+.back {
+  background-color: lightblue;
+  width: 400px;
+  height: 300px;
+  background-image: repeating-linear-gradient(45deg, white 0px, lightblue 40px);
+}
+
+.base {
+  position: relative;
+  left: 40px;
+  top: 40px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  mix-blend-mode: hard-light;
+  box-shadow: -1px 0px 22px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hole {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: gray;
+  position: absolute;
+  top: -50px;
+  left: 50px;
+}
+
+.vector {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: gray;
+  position: absolute;
+  top: -50px;
+  left: 50px;
+}
+
+.hero_img_sm {
+  @apply w-3/4 hidden top-0 -right-48 -z-10;
+}
+
+@media (max-width: 640px) {
+  .hero_img_sm {
+    display: block;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    width: 100vw;
+  }
+}
+
+.hero_img_md {
+  @apply hidden absolute w-80 -top-6 -right-16 -z-10 sm:block lg:hidden;
+}
+
+.hero_img_lg {
+  @apply hidden absolute w-3/4 -top-10 -z-10 lg:block;
+  right: calc(-30vw);
+}
+
+.darkmode_text {
+  color: white
+}
+
+
