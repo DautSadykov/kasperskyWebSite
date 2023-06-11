@@ -12,7 +12,7 @@
 }
 
 .platform_selector_dropdown {
-  @apply relative hidden border border-primary m-10;
+  @apply relative hidden border border-primary my-10;
 }
 
 .dropdown_arrow {
@@ -42,6 +42,7 @@
 
   .platform_selector_dropdown {
     display: block;
+
   }
 }
 
