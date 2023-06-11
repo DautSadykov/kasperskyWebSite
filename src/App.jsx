@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="relative overflow-hidden w-screen">
       <img className="hero_img_sm" src="hero_image_sm.png"/>    
-      <div className={`darkmode_bg ${darkmode ? 'absolute' : 'hidden'} absolute -z-20 bg-gray-900 w-screen h-[600px]`}></div>  
+      <div className={`darkmode_bg ${darkmode ? 'absolute' : 'hidden'} absolute top-0 -z-20 bg-gray-900 w-screen h-[900px] sm:h-[600px]`}></div>  
       <div className="main p-5">
         <HeroSection darkmode={darkmode} />
         <TabsSection darkmode={darkmode} />

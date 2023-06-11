@@ -8,9 +8,12 @@ export default function HeroSection({darkmode}) {
       <p className={`text-gray-500 mb-5 text-sm lg:mb-10 max-sm:hidden ${darkmode && "darkmode_text"}`}>
         Home {">"} Sub Page 2 {">"} Sub Page 3 {">"} Sub Page 4
       </p>
-      <button className="hero_button p-1 px-10 rounded-full font-bold lg:mb-5">
-        If you need an Special Offer Block
-      </button>
+      <div>
+        <button className="hero_button p-1 px-10 rounded-full font-bold lg:mb-5">
+          If you need an Special Offer Block
+        </button>
+        
+      </div>
       <h1 className={`w-1/2 my-5 text-3xl font-light tracking-wider ${darkmode && "darkmode_text"}`}>
         <b className="font-bold">Lorem ipsm</b> dolor, sit amet
       </h1>
