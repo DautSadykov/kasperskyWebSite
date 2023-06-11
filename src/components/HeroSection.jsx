@@ -7,17 +7,21 @@ export default function HeroSection({ darkmode, toggleDarkMode }) {
       <img className="hero_img_lg" src="hero_image_lg.png" />
       <img className="hero_img_md" src="hero_image_md.png" />
       <div className="flex items-center gap-5 mb-5 lg:mb-10">
-        <p className={`text-gray-500 text-sm max-sm:hidden ${darkmode && "darkmode_text"}`}>
+        <p
+          className={`text-gray-500 text-sm max-sm:hidden ${
+            darkmode && "darkmode_text"
+          }`}
+        >
           Home {">"} Sub Page 2 {">"} Sub Page 3 {">"} Sub Page 4
         </p>
         <div
-          className={`${darkmode ? "hidden" : "block"}`}
+          className={`${darkmode ? "hidden" : "block"} cursor-pointer`}
           onClick={toggleDarkMode}
         >
           <DarkMode className="hidden" style={{ color: "black" }} />
         </div>
         <div
-          className={`${darkmode ? "block" : "hidden"}`}
+          className={`${darkmode ? "block" : "hidden"} cursor-pointer`}
           onClick={toggleDarkMode}
         >
           <LightMode style={{ color: "white" }} />
