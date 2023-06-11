@@ -4,8 +4,8 @@ export default function TabsSection({darkmode}) {
   const [activeTab, setActiveTab] = useState("all");
 
   return (
-    <div>
-      <div className="platform_selector border-b flex justify-between w-5/6 z-10 lg:w-3/5">
+    <div className="w-full">
+      <div className="platform_selector border-b flex justify-between z-10 sm:w-5/6 lg:w-3/5">
         <div
           className={`flex items-start ${
             activeTab === "all" ? "active-tab" : ""

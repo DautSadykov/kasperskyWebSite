@@ -40,7 +40,7 @@ export default function SubscriptionSection() {
   return (
     <div className="subs_section relative pt-10 flex gap-10">
       <div
-        className="subs_arrow left-0 top-56 pl-2"
+        className="subs_arrow left-10 top-56 pl-2 z-10"
         onClick={() => handleChangeSlide("left")}
       >
         <ArrowBackIos style={{ color: "white" }} />
@@ -57,7 +57,7 @@ export default function SubscriptionSection() {
         </div>
       </div>
       <div
-        className="subs_arrow right-0 top-56 pl-0.5"
+        className="subs_arrow right-10 top-56 pl-0.5"
         onClick={() => handleChangeSlide("right")}
       >
         <ArrowForwardIos className="" style={{ color: "white" }} />
